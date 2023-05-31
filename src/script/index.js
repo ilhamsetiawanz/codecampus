@@ -1,3 +1,3 @@
 import { getDummy } from "./data/fetch-api";
 
-getDummy();
+console.log(getDummy);

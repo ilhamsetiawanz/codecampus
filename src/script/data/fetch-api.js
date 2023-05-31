@@ -13,6 +13,5 @@ export const getDummy = async () => {
         console.log(error);
         return;
     }
-
-    console.log(dummydata);
+    return dummydata;
 }
