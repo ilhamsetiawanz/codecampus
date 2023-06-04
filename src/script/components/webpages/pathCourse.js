@@ -1,6 +1,6 @@
 import { getPath } from '../../data/fetch-api';
 
-export class pathCourse extends HTMLElement {
+export class PathCourse extends HTMLElement {
   constructor() {
     super();
   }
@@ -11,10 +11,11 @@ export class pathCourse extends HTMLElement {
 
       const pathList = document.createElement('div');
       pathList.classList.add('path-list');
+      pathList.classList.add('row', 'justify-content-center', 'gap-5'); // gunakan line ini untuk melakukan style parent element pada cards//
 
       pathCourses.forEach((paths) => {
         pathList.innerHTML += `
-              <div class="card" style="width: 18rem;">
+              <div class="card card-width">
                 <img src="${paths.pictUrl}">
                 <div class="card-body">
                     <a>${paths.name}</a>
@@ -32,4 +33,4 @@ export class pathCourse extends HTMLElement {
   }
 }
 
-customElements.define('path-course', pathCourse);
+customElements.define('path-course', PathCourse);

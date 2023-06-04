@@ -16,3 +16,18 @@ export const getPath = async () => {
   }
   return pathCourse;
 };
+
+export const getRating = async () => {
+  const { data: course, error } = await supabase
+    .from('course')
+    .select('rating')
+    .gte('rating', 4.5)
+    .lte('rating', 5);
+
+  if (error) {
+    console.log(error);
+    return;
+  }
+  console.log(course);
+  return course;
+};

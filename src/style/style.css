@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 1200px) {
-    .center-navs{
-        display: flex;
-        justify-content: center;
-    }
+
+.card-width {
+    width: 40vh;
 }
+

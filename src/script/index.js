@@ -1,9 +1,19 @@
 /* eslint-disable new-cap */
-import { getPath } from './data/fetch-api';
-import { pathCourse } from './components/webpages/pathCourse';
+import Apps from './components/views/app';
+import '../style/style.css';
+import { getRating } from './data/fetch-api';
 
-getPath();
+getRating();
+const app = new Apps({
+  navbar: document.querySelector('#navigation-bars'),
+  content: document.querySelector('#main-Content'),
+  footer: document.querySelector('#footers'),
+});
 
-const mainsection = document.getElementById('main-Content');
-const dummy = new pathCourse();
-mainsection.appendChild(dummy);
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
+
+window.addEventListener('load', () => {
+  app.renderPage();
+});
