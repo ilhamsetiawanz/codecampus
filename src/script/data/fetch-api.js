@@ -1,17 +1,18 @@
-import { createClient } from '@supabase/supabase-js'
+/* eslint-disable consistent-return */
+import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://vmvstmkzcpsxdvgkhkuu.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZtdnN0bWt6Y3BzeGR2Z2toa3V1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODU0MzAxMTMsImV4cCI6MjAwMTAwNjExM30.cL8ncZtT4tsiXq8GN5Xt0YD4E8p8tkpQI3_iOmDsMMU'
-const supabase = createClient(supabaseUrl, supabaseKey)
+const supabaseUrl = 'https://cjujplctbdbrybujcfly.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqdWpwbGN0YmRicnlidWpjZmx5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODU2MjE3ODIsImV4cCI6MjAwMTE5Nzc4Mn0.S5lDd5jFzWbIJHAgsZ0gOkrNAPhxWzoRi5Niwky0ocg';
+const supabase = createClient(supabaseUrl, supabaseKey);
 
-export const getDummy = async () => {
-    const { data: dummydata, error } = await supabase
-    .from('dummydata')
-    .select('*')
+export const getPath = async () => {
+  const { data: pathCourse, error } = await supabase
+    .from('pathCourse')
+    .select('*');
 
-    if (error) {
-        console.log(error);
-        return;
-    }
-    return dummydata;
-}
+  if (error) {
+    console.log(error);
+    return;
+  }
+  return pathCourse;
+};
