@@ -5,6 +5,7 @@ const supabaseUrl = 'https://cjujplctbdbrybujcfly.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNqdWpwbGN0YmRicnlidWpjZmx5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODU2MjE3ODIsImV4cCI6MjAwMTE5Nzc4Mn0.S5lDd5jFzWbIJHAgsZ0gOkrNAPhxWzoRi5Niwky0ocg';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+// Path API
 export const getPath = async () => {
   const { data: pathCourse, error } = await supabase
     .from('pathCourse')
@@ -17,12 +18,12 @@ export const getPath = async () => {
   return pathCourse;
 };
 
+// Rating Course API
 export const getRating = async () => {
   const { data: course, error } = await supabase
     .from('course')
-    .select('rating')
-    .gte('rating', 4.5)
-    .lte('rating', 5);
+    .select('*')
+    .gte('rating', 4); // Dengan Memanipulasi nilai pada rating kita dapat mengatur batasan dari rating yang ada
 
   if (error) {
     console.log(error);
@@ -30,4 +31,37 @@ export const getRating = async () => {
   }
   console.log(course);
   return course;
+};
+
+// Spesifik course berdasarkan ID
+export const getCourses = async (id) => {
+  const { data: course, error } = await supabase
+    .from('course')
+    .select(`
+  *,
+  materi (
+    courseId, title
+  )
+`)
+    .eq('id', id);
+
+  console.log(course[0]);
+  return course[0];
+};
+
+export const getMateri = async (id) => {
+  const { data: materi, error } = await supabase
+    .from('materi')
+    .select('*')
+    .eq('id', id);
+
+  return materi;
+};
+// Blog API
+export const getBlogs = async () => {
+  const { data: blogs, error } = await supabase
+    .from('blogs')
+    .select('*');
+
+  console.log(blogs);
 };

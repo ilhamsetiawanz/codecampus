@@ -10,17 +10,14 @@ export class PathCourse extends HTMLElement {
       const pathCourses = await getPath();
 
       const pathList = document.createElement('div');
-      pathList.classList.add('path-list');
-      pathList.classList.add('row', 'justify-content-center', 'gap-5'); // gunakan line ini untuk melakukan style parent element pada cards//
+      pathList.classList.add('path-list', 'categories', 'container');
 
       pathCourses.forEach((paths) => {
         pathList.innerHTML += `
-              <div class="card card-width">
-                <img src="${paths.pictUrl}">
-                <div class="card-body">
-                    <a>${paths.name}</a>
-                </div>
-             </div>
+                  <div class="categories-box">
+                    <img src="${paths.pictUrl}" alt="${paths.name}" class="categories-img">
+                    <a href="#" class="category-title">${paths.name}</a>
+                  </div>
               `;
       });
       this.appendChild(pathList);
