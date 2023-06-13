@@ -4,8 +4,7 @@ const Courses = {
   async render() {
     return `
     <div class="container-fluid populer-section" >
-      <p class="text-center">Course</p>
-      <h2 class="explore-container-title">Explore Popular Course</h2>
+      <h2 class="explore-container-title">All Course</h2>
         <div id="courseSection" class="container-fluid">
         </div> 
     </div>

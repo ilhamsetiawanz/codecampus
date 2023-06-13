@@ -66,6 +66,7 @@ export const getCourses = async (id) => {
   return course[0];
 };
 
+// materi API
 export const getMateri = async (id) => {
   const { data: materi, error } = await supabase
     .from('materi')
@@ -75,6 +76,7 @@ export const getMateri = async (id) => {
   console.log(materi[0]);
   return materi[0];
 };
+
 // Blog API
 export const getBlogs = async () => {
   const { data: blogs, error } = await supabase
