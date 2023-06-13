@@ -10,7 +10,7 @@ export class LessonPage extends HTMLElement {
     try {
       const url = UrlParser.parseActiveUrlWithoutCombiner();
       const courses = await getCourses(url.id);
-      const courseList = document.createElement('div');
+      const courseList = document.createElement('div'); // pada bagian ini jika menambahkan class untuk melakukan style//
       courseList.classList.add('course-list');
 
       courseList.innerHTML = `

@@ -6,7 +6,7 @@ const lesson = {
         <section id="lessonSection">
         
         </section>
-        `;
+        `; // pada bagian section jika menambahkan class untuk melakukan style//
   },
   async afterRender() {
     const lessonSection = document.querySelector('#lessonSection');
