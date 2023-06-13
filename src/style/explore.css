@@ -1,0 +1,64 @@
+.explore-container-title {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.explore-box {
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: .5rem;
+}
+.explore-box{
+    width: 55vh;
+}
+
+.explore {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(334px, auto));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.explore-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem;
+}
+
+.explore-title {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Mengatur jumlah baris teks yang ditampilkan */
+    -webkit-box-orient: vertical;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* Header Responsive */
+    
+    /* explore Responsive */
+    .hp-explore-box{
+        width: 110%;
+    }
+
+    .explore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

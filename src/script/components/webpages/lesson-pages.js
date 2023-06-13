@@ -14,10 +14,22 @@ export class LessonPage extends HTMLElement {
       courseList.classList.add('course-list');
 
       courseList.innerHTML = `
-        <img src="${courses.pictUrl}" alt="${courses.tittle}" class="img-width">
-        <h2>${courses.tittle}</h2>
+        <div class="container">
+          <div class="jumbotron" style="margin-bottom: 3rem; background-color: #f8f9fa;">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 style="padding-top: 1rem; padding-bottom: 1rem;">${courses.tittle}</h2>
+                <p class="lead" style="padding-bottom: 1rem;">Ayok Bersama Kita belajar memahami mengenai ${courses.tittle}.</p>
+              </div>
+              <div class="col-md-6">
+                <img src="${courses.pictUrl}" alt="${courses.tittle}" class="img-width">
+              </div>
+            </div>
+          </div>
+        </div>       
         <p>${courses.desc}<p>
-        <div class="materi">
+        <div class="materi ">
+          <h2>Materi</h2>
         </div>
       `;
 
@@ -26,10 +38,17 @@ export class LessonPage extends HTMLElement {
       courses.materi.forEach((materi) => {
         const materiItem = document.createElement('div');
         materiItem.innerHTML = `
-          <p><strong>Course ID:</strong> ${materi.courseId}</p>
-          <p><strong>Title:</strong> ${materi.title}</p>
+          <a href="#/classroom/${materi.classId}"><strong>Title:</strong> ${materi.title}</a>
         `;
         materiContainer.appendChild(materiItem);
+      });
+
+      courses.projects.forEach((project) => {
+        const projectsItem = document.createElement('div');
+        projectsItem.innerHTML = `
+          <a href="#/classroom/${project.id}"><strong>Title:</strong> ${project.title}</a>
+        `;
+        materiContainer.appendChild(projectsItem);
       });
 
       this.appendChild(courseList);

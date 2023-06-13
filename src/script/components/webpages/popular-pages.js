@@ -14,7 +14,7 @@ export class TopCourse extends HTMLElement {
 
       ratingCourse.slice(0, 6).forEach((rating) => {
         ratingList.innerHTML += `
-        <div class="explore-box">
+        <div class="explore-box hp-explore-box">
           <img src="${rating.pictUrl}" alt="${rating.tittle}" class="explore-img">
           <a href="#/lesson/${rating.id}" class="explore-title text-decoration-none">${rating.tittle}</a>
           <p class="card-text text-desc">${rating.desc}</p>

@@ -33,6 +33,20 @@ export const getRating = async () => {
   return course;
 };
 
+// Course List API
+export const getCourseList = async () => {
+  const { data: course, error } = await supabase
+    .from('course')
+    .select('*');
+
+  if (error) {
+    console.log(error);
+    return;
+  }
+  console.log(course);
+  return course;
+};
+
 // Spesifik course berdasarkan ID
 export const getCourses = async (id) => {
   const { data: course, error } = await supabase
@@ -40,7 +54,10 @@ export const getCourses = async (id) => {
     .select(`
   *,
   materi (
-    courseId, title
+    classId, title, courseId
+  ),
+  projects (
+    id, title, courseId
   )
 `)
     .eq('id', id);
@@ -53,9 +70,10 @@ export const getMateri = async (id) => {
   const { data: materi, error } = await supabase
     .from('materi')
     .select('*')
-    .eq('id', id);
+    .eq('classId', id);
 
-  return materi;
+  console.log(materi[0]);
+  return materi[0];
 };
 // Blog API
 export const getBlogs = async () => {

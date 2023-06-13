@@ -1,6 +1,6 @@
 import { LessonPage } from '../webpages/lesson-pages';
 
-const blog = {
+const lesson = {
   async render() {
     return `
         <section id="lessonSection">
@@ -16,4 +16,4 @@ const blog = {
   },
 };
 
-export default blog;
+export default lesson;
