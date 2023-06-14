@@ -14,7 +14,7 @@ export class CourseList extends HTMLElement {
 
       ratingCourse.forEach((course) => {
         ratingList.innerHTML += `
-          <div class="explore-box">
+          <div class="explore-box hp-explore-box">
             <img src="${course.pictUrl}" alt="${course.tittle}" class="explore-img">
             <a href="#/lesson/${course.id}" class="explore-title text-decoration-none">${course.tittle}</a>
             <p class="card-text text-desc">${course.desc}</p>

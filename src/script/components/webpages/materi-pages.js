@@ -29,21 +29,22 @@ export class ClassRoomPage extends HTMLElement {
     
     
         <div class="item-materi container-fluid my-5">  
-          <div class="intro">
+          <div class="intro mb-4">
             <h3 class="fs-5 fw-bold">Pengenalan</h3>
             <p class="fs-6 text-justify">${materi.introduction}</p>
           </div>
-          <div class="overview">
+          <div class="overview mb-4">
             <h3 class="fs-5 fw-bold">Penjelasan Kelas</h3>
             <p class="fs-6 text-justify">${materi.LessonOverview}</p>
           </div>
-          <div class="lesson">
+          <div class="lesson mb-5">
             <h3 class="fs-5 fw-bold">${materi.lessons.title}</h3>
             <p class="fs-6 text-justify">${materi.lessons.content}</p>
             ${materi.lessons.subContent.map((sub) => `
-              <div class="sub-lesson">
+              <div class="sub-lesson mb-5">
                 <h4 class="fs-5 fw-bold">${sub.subTitle}</h4>
                 <p class="fs-6 text-justify">${sub.subMateri}</p>
+                <img class="materi-img" src="${sub.subImg}">
               </div>
             `).join('')}
           </div>
