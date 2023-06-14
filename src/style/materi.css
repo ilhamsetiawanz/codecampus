@@ -1,0 +1,24 @@
+.item-materi{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+:root {
+    --container-color: #1a1e21;
+    --second-color: #fd8f44;
+    --text-color: #172317;
+    --bg-color: #fff;
+}
+
+
+.btn-custom{
+    background-color: var(--bg-color);
+    color: var(--second-color);
+    padding: .8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #d0d0d0;
+    transition: .3s ease;
+}

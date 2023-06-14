@@ -5,6 +5,7 @@ import '../style/lesson.css';
 import '../style/responsive.css';
 import '../style/explore.css';
 import '../style/about.css';
+import '../style/materi.css';
 import '../style/hero.css';
 
 const app = new Apps({

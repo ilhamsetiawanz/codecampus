@@ -3,7 +3,7 @@ import { ClassRoomPage } from '../webpages/materi-pages';
 const ClassRoom = {
   async render() {
     return `
-        <section id="cp" class="container-fluid xl-padding">
+        <section id="cp">
           <section id="classRoom">
           
           </section>

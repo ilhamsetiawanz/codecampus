@@ -3,7 +3,7 @@ import { CourseList } from '../webpages/course-pages';
 const Courses = {
   async render() {
     return `
-    <div class="container-fluid populer-section" >
+    <div class="container populer-section" >
       <h2 class="explore-container-title">All Course</h2>
         <div id="courseSection" class="container-fluid">
         </div> 

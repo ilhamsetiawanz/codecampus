@@ -5,7 +5,7 @@ const home = {
   async render() {
     return `
             <section class="home" id="home">
-                <div class="hero-text container">
+                <div class="hero-text jumbotron">
                     <span class="hero-title">Start Learning From Home</span>
                     <h2 class="hero-subtitle">
                         Connect With Our Expert And Start Learning Today
@@ -23,7 +23,7 @@ const home = {
             </section>
             <div id="pathSection" class="container-fluid path-section">
             </div>
-            <div class="container-fluid populer-section" >
+            <div class="container populer-section" >
                 <p class="text-center">Course</p>
                 <h2 class="explore-container-title">Explore Popular Course</h2>
                 <div id="populerSection" class="container-fluid">
