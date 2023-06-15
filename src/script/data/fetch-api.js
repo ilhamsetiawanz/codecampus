@@ -85,3 +85,13 @@ export const getBlogs = async () => {
 
   console.log(blogs);
 };
+
+// FaQ API
+
+export const getFaq = async () => {
+  const { data: FaQ, error } = await supabase
+    .from('FaQ')
+    .select('*');
+
+  return FaQ;
+};

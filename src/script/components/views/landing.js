@@ -1,5 +1,6 @@
 import { PathCourse } from '../webpages/pathCourse';
 import { TopCourse } from '../webpages/popular-pages';
+import { FaQpage } from '../webpages/faq-pages';
 
 const home = {
   async render() {
@@ -30,8 +31,8 @@ const home = {
                 </div> 
             </div>
             <div class="container-l bg-body-secondary">
-              <h2 class="explore-container-title fs-3 pt-5"> Pertanyaan Yang Sering Ditanyakan<h2>
-              <div class="accordion" id="accordionExample">
+              <h2 class="text-center py-5">FAQ<h2>
+              <div class="accordion  pb-5" id="accordionExample">
                 
               </div>
             </div>
@@ -46,6 +47,10 @@ const home = {
     const topContainer = document.querySelector('#populerSection');
     const topContent = new TopCourse();
     topContainer.appendChild(topContent);
+
+    const faqContainer = document.querySelector('#accordionExample');
+    const faqContent = new FaQpage();
+    faqContainer.appendChild(faqContent);
   },
 };
 
