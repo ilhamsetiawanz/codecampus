@@ -29,6 +29,12 @@ const home = {
                 <div id="populerSection" class="container-fluid">
                 </div> 
             </div>
+            <div class="container-l bg-body-secondary">
+              <h2 class="explore-container-title fs-3 pt-5"> Pertanyaan Yang Sering Ditanyakan<h2>
+              <div class="accordion" id="accordionExample">
+                
+              </div>
+            </div>
           </section>
           `;
   },

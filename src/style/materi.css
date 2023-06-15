@@ -1,7 +1,3 @@
-.item-materi{
-    padding-left: 15%;
-    padding-right: 15%;
-}
 :root {
     --container-color: #1a1e21;
     --second-color: #fd8f44;
@@ -18,6 +14,11 @@
     border-radius: 5px;
 }
 
+.item-materi{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 .btn-custom:hover {
     background-color: #d0d0d0;
     transition: .3s ease;
@@ -25,4 +26,11 @@
 
 .materi-img{
     width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .item-materi{
+        padding-left: 9%;
+        padding-right: 9%;
+    }
 }
