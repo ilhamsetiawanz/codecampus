@@ -36,3 +36,45 @@
     height: auto;
     max-width: 100%;
 }
+.desc {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .desc > h2 {
+    color: var(--text-color);
+    margin-top: 10px;
+  }
+  .materi {
+    width: 70%;
+    height: auto;
+    grid-column: span 8;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+.materi > h2 {
+    padding: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.materi > div > a {
+    text-decoration: none;
+    color: var(--text-color);
+    
+}
+.materi > div {
+    padding: 10px;
+    border: 1px solid #ccc;
+} 
+.materi > div:hover {
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+.svg-small {
+    width: 20px;
+    height: 20px;
+  }
