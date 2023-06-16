@@ -15,21 +15,27 @@ export class LessonPage extends HTMLElement {
 
       courseList.innerHTML = `
         <div class="container">
-          <div class="jumbotron" style="margin-bottom: 3rem; background-color: #f8f9fa;">
+          <div class="jumbotron" style="margin-bottom: 3rem; align-items:"center">
             <div class="row">
               <div class="col-md-6">
-                <h2 style="padding-top: 1rem; padding-bottom: 1rem;">${courses.tittle}</h2>
+                <h2 style="padding-top: 1rem; padding-bottom: 1rem; text-align: center">${courses.tittle}</h2>
                 <p class="lead" style="padding-bottom: 1rem;">Ayok Bersama Kita belajar memahami mengenai ${courses.tittle}.</p>
               </div>
-              <div class="col-md-6">
-                <img src="${courses.pictUrl}" alt="${courses.tittle}" class="img-width">
               </div>
             </div>
+            <div class="row">
+            <div class="col-md-6">
+                <img src="${courses.pictUrl}" alt="${courses.tittle}" class="img-width">
           </div>
-        </div>       
+          </div>
+        </div>
+        <div class="cards">
+        <h2>Overview</h2>      
         <p>${courses.desc}<p>
-        <div class="materi ">
+        </div> 
+        <div class="materi">
           <h2>Materi</h2>
+          </div>
         </div>
       `;
 
