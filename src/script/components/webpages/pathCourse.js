@@ -16,7 +16,7 @@ export class PathCourse extends HTMLElement {
         pathList.innerHTML += `
                   <div class="categories-box">
                     <img src="${paths.pictUrl}" alt="${paths.name}" class="categories-img">
-                    <a href="#" class="category-title">${paths.name}</a>
+                    <a href="#" class="category-title text-decoration-none">${paths.name}</a>
                   </div>
               `;
       });

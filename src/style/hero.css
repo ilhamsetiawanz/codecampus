@@ -68,12 +68,12 @@
     color: #000;
 }
 .accordion-body{
-    font-weight: normal;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: .9rem;
 }
 .faq-list{
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 9.6%;
+    padding-right: 9.6%;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     /* Header Responsive */

@@ -23,18 +23,67 @@ const home = {
                 </div>
             </section>
             <div id="pathSection" class="container-fluid path-section">
+            
             </div>
             <div class="container populer-section" >
                 <p class="text-center">Course</p>
-                <h2 class="explore-container-title">Explore Popular Course</h2>
+                <h2 class="explore-container-title fw-bold">Explore Popular Course</h2>
                 <div id="populerSection" class="container-fluid">
                 </div> 
             </div>
             <div class="container-l bg-body-secondary">
-              <h2 class="text-center py-5">FAQ<h2>
+              <h2 class="text-center py-5 fw-bold">FAQ<h2>
               <div class="accordion  pb-5" id="accordionExample">
                 
               </div>
+            </div>
+            <div class="container p-5">
+              <h2 class="text-center fw-bold">Testimonial User CodeCampus</h2>
+              <div class="container-xl pt-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <img src="./asset/rey.jpeg" class="card-img-top" alt="Testimonial 1">
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Rey</h5>
+                      <p class="card-text fs-6">CodeCampus luar biasa! Tutorial interaktifnya membantu saya menguasai pemrograman dengan mudah dan menyenangkan. 
+                        Berkat CodeCampus, saya berhasil mendapatkan pekerjaan sebagai junior developer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <img src="./asset/peter.jpeg" class="card-img-top" alt="Testimonial 2">
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Peter Griffin</h5>
+                      <p class="card-text fs-6">CodeCampus sangat direkomendasikan! Dengan panduan langkah demi langkah dan latihan praktisnya, saya bisa memahami pemrograman dengan mudah.
+                         Sekarang saya bekerja sebagai pengembang web berkat CodeCampus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <img src="./asset/miguel.jpeg" class="card-img-top" alt="Testimonial 3">
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Miguel Ohara</h5>
+                      <p class="card-text fs-6">Materi pelajaran di CodeCampus sangat komprehensif dan berkualitas. Saya sangat mengapresiasi forum komunitasnya yang membantu saya dalam belajar. 
+                        CodeCampus berperan penting dalam perkembangan profesional saya.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="testimonial-card">
+                    <img src="./asset/tom.jpeg" class="card-img-top" alt="Testimonial 4">
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Tom Holland</h5>
+                      <p class="card-text fs-6">CodeCampus adalah penyelamat bagi saya! Sebagai pemula dalam dunia pemrograman, saya merasa terbantu dengan tutorial-tutorial interaktif yang disediakan oleh CodeCampus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </section>
           `;

@@ -22,7 +22,7 @@ export class FaQpage extends HTMLElement {
             </h2>
             <div id="${faq.collapse}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <p class="fs-6 fst-normal">${faq.content}</p>
+                <p class="fst-normal">${faq.content}</p>
             </div>
             </div>
         </div>
