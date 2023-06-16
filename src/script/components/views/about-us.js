@@ -1,82 +1,79 @@
 const aboutUs = {
   async render() {
     return `
-    <h1>CodeCampus Team</h1>
-    <div class="main-container">
-        <!-- container -->
-        <div class="cards">
-            <!-- profile image -->
+    
+    <h2 class="text-center fs-3 py-5 fw-bold">CodeCampus Team</h2>
+        <div class="container-xl mb-5">
+            <!-- container -->
+            <div class="cards">
+                <!-- profile image -->
+                <div class="text-center">
+                    <img class="img-fluid" src="./asset/ilham.png" alt="Ilham Setiawan"/>
+                </div>
+                <!-- profile detail -->
+                <h4 class="text-center fs-5">La Ode Ilham Setiawan</h4>
+                <p class="text-center">Universitas Halu Oleo</p>
 
-            <img src="#" alt=""/>
-            <!-- profile detail -->
+                <!-- social Media Links -->
+                <div class="social-media text-center">
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/ilhamsetiawanz" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_ilameeeeee_/?igshid=ZDc4ODBmNjlmNQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/la-ode-muhammad-ilham-setiawan-6b1872262/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- profile image -->
+                <div class="text-center">
+                    <img class="img-fluid" src="./asset/boy.jpg" alt=""/>
+                </div>
+                <!-- profile detail -->
+                <h4 class="text-center fs-5">Boy Boy Geodevandry</h4>
+                <p class="text-center">Universitas Tanjungpura</p>
 
-            <h4>La Ode Ilham Setiawan</h4>
-            <p>Universitas Halua Haleo</p>
+                <!-- social Media Links -->
+                <div class="social-media text-center">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/whosboyy/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/boy-boy-geodevandry-04535723b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- profile image -->
+                <div class="text-center">
+                    <img class="img-fluid" src="#" alt=""/>
+                </div>
+                <!-- profile detail -->
+                <h4 class="text-center fs-5">Akmal Putra Arianda</h4>
+                <p class="text-center">Universitas Tanjungpura</p>
 
-            <!-- social Media Links -->
+                <!-- social Media Links -->
+                <div class="social-media text-center">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- profile image -->
+                <div class="text-center">
+                    <img class="img-fluid" src="#" alt=""/>
+                </div>
+                <!-- profile detail -->
+                <h4 class="fs-5 text-center">Raisul Amin R</h4>
+                <p class="text-center">Universitas Muhammadiyah <br> Parepare</p>
 
-            <div class="social-media">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <!-- social Media Links -->
+                <div class="social-media text-center">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
-        <div class="cards">
-            <!-- profile image -->
-
-            <img src="img/boy.jpg" alt=""/>
-            <!-- profile detail -->
-
-            <h4>Boy Boy Geodevandry</h4>
-            <p>Universitas Tanjungpura</p>
-
-            <!-- social Media Links -->
-
-            <div class="social-media">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/whosboyy/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/boy-boy-geodevandry-04535723b/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="cards">
-            <!-- profile image -->
-
-            <img src="#" alt=""/>
-            <!-- profile detail -->
-
-            <h4>Akmal Putra Arianda</h4>
-            <p>Universitas Tanjungpura</p>
-
-            <!-- social Media Links -->
-
-            <div class="social-media">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="cards">
-            <!-- profile image -->
-
-            <img src="#" alt=""/>
-            <!-- profile detail -->
-
-            <h4>Raisul Amin R</h4>
-            <p>Universitas Muhammadiyah <br> Parepare</p>
-
-            <!-- social Media Links -->
-
-            <div class="social-media">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
         `;
   },
   async afterRender() {
