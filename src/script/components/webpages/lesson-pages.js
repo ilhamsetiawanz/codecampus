@@ -14,19 +14,13 @@ export class LessonPage extends HTMLElement {
       courseList.classList.add('course-list');
 
       courseList.innerHTML = `
-        <div class="container">
-          <div class="jumbotron" style="margin-bottom: 3rem; background-color: #f8f9fa;">
-            <div class="row">
-              <div class="col-md-6">
-                <h2 style="padding-top: 1rem; padding-bottom: 1rem;">${courses.tittle}</h2>
-                <p class="lead" style="padding-bottom: 1rem;">Ayok Bersama Kita belajar memahami mengenai ${courses.tittle}.</p>
-              </div>
-              <div class="col-md-6">
-                <img src="${courses.pictUrl}" alt="${courses.tittle}" class="img-width">
-              </div>
-            </div>
+        <div class="jumbotron py-5 bg-opacity-60" style="height: 400px; background-color: rgba(0, 0, 0, 0.7); position: relative;">
+          <img src="${courses.pictUrl}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: grayscale(40%); z-index: -1;">
+          <div class="container text-center justify-content-center">
+            <h1 class="display-4 fs-1 fw-bolder text-white">${courses.tittle}</h1>
+            <p class="lead fs-6 text-white">Jangan pernah berhenti belajar. Di dunia coding, ada selalu hal baru yang bisa dipelajari dan dikuasai.<br> Teruslah eksplorasi dan berani mengambil tantangan baru.</p>
           </div>
-        </div>       
+        </div>      
         <p>${courses.desc}<p>
         <div class="materi ">
           <h2>Materi</h2>

@@ -3,7 +3,7 @@ const aboutUs = {
     return `
     
     <h2 class="text-center fs-3 py-5 fw-bold">CodeCampus Team</h2>
-        <div class="container-xl mb-5">
+        <div class="main-container container-xl mb-5">
             <!-- container -->
             <div class="cards">
                 <!-- profile image -->
@@ -11,8 +11,8 @@ const aboutUs = {
                     <img class="img-fluid" src="./asset/ilham.png" alt="Ilham Setiawan"/>
                 </div>
                 <!-- profile detail -->
-                <h4 class="text-center fs-5">La Ode Ilham Setiawan</h4>
-                <p class="text-center">Universitas Halu Oleo</p>
+                <h4 class="text-center fs-6">La Ode Muh. Ilham Setiawan</h4>
+                <p class="text-center text-prof">Universitas Halu Oleo</p>
 
                 <!-- social Media Links -->
                 <div class="social-media text-center">
@@ -28,8 +28,8 @@ const aboutUs = {
                     <img class="img-fluid" src="./asset/boy.jpg" alt=""/>
                 </div>
                 <!-- profile detail -->
-                <h4 class="text-center fs-5">Boy Boy Geodevandry</h4>
-                <p class="text-center">Universitas Tanjungpura</p>
+                <h4 class="text-center fs-6">Boy Boy Geodevandry</h4>
+                <p class="text-center text-prof">Universitas Tanjungpura</p>
 
                 <!-- social Media Links -->
                 <div class="social-media text-center">
@@ -42,11 +42,11 @@ const aboutUs = {
             <div class="cards">
                 <!-- profile image -->
                 <div class="text-center">
-                    <img class="img-fluid" src="#" alt=""/>
+                    <img class="img-fluid" src="./asset/akmal.png" alt=""/>
                 </div>
                 <!-- profile detail -->
-                <h4 class="text-center fs-5">Akmal Putra Arianda</h4>
-                <p class="text-center">Universitas Tanjungpura</p>
+                <h4 class="text-center fs-6">Akmal Putra Arianda</h4>
+                <p class="text-center text-prof">Universitas Tanjungpura</p>
 
                 <!-- social Media Links -->
                 <div class="social-media text-center">
@@ -62,8 +62,8 @@ const aboutUs = {
                     <img class="img-fluid" src="#" alt=""/>
                 </div>
                 <!-- profile detail -->
-                <h4 class="fs-5 text-center">Raisul Amin R</h4>
-                <p class="text-center">Universitas Muhammadiyah <br> Parepare</p>
+                <h4 class="fs-6 text-center">Raisul Amin R</h4>
+                <p class="text-center text-prof">Universitas Muhammadiyah <br> Parepare</p>
 
                 <!-- social Media Links -->
                 <div class="social-media text-center">

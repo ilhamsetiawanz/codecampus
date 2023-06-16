@@ -65,8 +65,9 @@
     flex: 1;
   }
   .testimonial-card .card-title {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: bold;
+    color: var(--second-color);
   }
 .testimonial-card .card-text {
     overflow: hidden;
@@ -74,7 +75,9 @@
     display: -webkit-box;
     -webkit-line-clamp: 2.4; /* Mengatur jumlah baris teks yang ditampilkan */
     -webkit-box-orient: vertical;
+    font-size: 0.9rem;
 }
+
 /* Categories */
 .categories {
     display: grid;
