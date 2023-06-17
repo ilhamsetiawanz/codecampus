@@ -6,7 +6,7 @@ import '../style/responsive.css';
 import '../style/explore.css';
 import '../style/about.css';
 import '../style/materi.css';
-import '../style/hero.css';
+import '../style/landing.css';
 
 const app = new Apps({
   navbar: document.querySelector('#navigation-bars'),

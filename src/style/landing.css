@@ -12,8 +12,12 @@
 
 .hero-text {
     color: var(--bg-color);
-    max-width: 720px;
-    display: grid;
+    max-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-title {
@@ -22,10 +26,12 @@
     color: var(--second-color);
     text-transform: uppercase;
     padding-bottom: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .hero-subtitle {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 1rem;
 }
@@ -34,6 +40,8 @@
     font-size: 1rem;
     text-align: center;
     padding-bottom: 3rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .btn-hero {
@@ -75,19 +83,59 @@
     padding-left: 9.6%;
     padding-right: 9.6%;
 }
+
+/* Testimonial */
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.testimonial-card .card-img-top {
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.testimonial-card .card-body {
+    flex: 1;
+}
+.testimonial-card .card-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--second-color);
+}
+.testimonial-card .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2.4; /* Mengatur jumlah baris teks yang ditampilkan */
+    -webkit-box-orient: vertical;
+    font-size: 0.9rem;
+    text-align: justify;
+}
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     /* Header Responsive */
     .hero-subtitle{
-        font-size: 28px;
+        font-size: 1.3rem;
     }
     .hero-title{
-        font-size: 22px;
+        font-size: 1.5rem;
     }
     .hero-sub-subtitle{
-        font-size: 17px;
+        font-size: 0.9rem;
     }
     .find-btn, .explore-btn{
         font-size: 14px;
         text-align: center;
+    }
+
+    /* Testimonial */
+    .testimonial-card .card-img-top{
+        width: 20%;
+        height: 20%;
+    }
+    .testimonial-card .card-text{
+        font-size: .79rem;
     }
 }

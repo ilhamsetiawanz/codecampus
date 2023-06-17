@@ -8,7 +8,7 @@ const home = {
             <section class="home" id="home">
                 <div class="hero-text jumbotron">
                     <span class="hero-title">Start Learning From Home</span>
-                    <h2 class="hero-subtitle">
+                    <h2 class="hero-subtitle fw-bold">
                         Connect With Our Expert And Start Learning Today
                     </h2>
                     <span class="hero-sub-subtitle">

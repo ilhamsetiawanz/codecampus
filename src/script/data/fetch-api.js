@@ -29,7 +29,7 @@ export const getRating = async () => {
     console.log(error);
     return;
   }
-  console.log(course);
+
   return course;
 };
 
@@ -43,7 +43,7 @@ export const getCourseList = async () => {
     console.log(error);
     return;
   }
-  console.log(course);
+
   return course;
 };
 
@@ -62,7 +62,6 @@ export const getCourses = async (id) => {
 `)
     .eq('id', id);
 
-  console.log(course[0]);
   return course[0];
 };
 
@@ -73,7 +72,6 @@ export const getMateri = async (id) => {
     .select('*')
     .eq('classId', id);
 
-  console.log(materi[0]);
   return materi[0];
 };
 
@@ -83,7 +81,7 @@ export const getBlogs = async () => {
     .from('blogs')
     .select('*');
 
-  console.log(blogs);
+  return blogs;
 };
 
 // FaQ API
