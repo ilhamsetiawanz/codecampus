@@ -26,7 +26,7 @@ export class ClassRoomPage extends HTMLElement {
                 </a>
               </div>
         </div>
-        <div class="item-materi container-fluid my-5">  
+        <div class="item-materi container-fluid py-5 bg-body-tertiary">  
           <div class="intro mb-4">
             <h3 class="fs-5 fw-bold">Pengenalan</h3>
             <p class="fs-6 text-justify">${materi.introduction}</p>
@@ -46,7 +46,7 @@ export class ClassRoomPage extends HTMLElement {
               </div>
             `).join('')}
           </div>
-          <div class="assignment">
+          <div class="assignment pb-4">
             <h3 class="fs-5 fw-bold">Tugas</h3>
             <p class="fs-6 text-justify">${materi.Assignment}</p>
           </div>
