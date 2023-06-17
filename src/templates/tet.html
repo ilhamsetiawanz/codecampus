@@ -1,14 +1,33 @@
-<div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${faq.collapse}" aria-expanded="false" aria-controls="${faq.collapse}">
-        ${faq.title}
-      </button>
-    </h2>
-    <div id="${faq.collapse}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <p>${faq.content}</p>
-      </div>
-    </div>
+<div id="categoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-<label for="s"></label>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <div class="path-list categories container">
+      <div class="categories-box">
+        <img src="${paths.pictUrl}" alt="${paths.name}" class="categories-img">
+        <a href="#" class="category-title text-decoration-none">${paths.name}</a>
+      </div>
+      <!-- Tambahkan card categories lainnya di sini -->
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="path-list categories container">
+      <div class="categories-box">
+        <img src="${paths2.pictUrl}" alt="${paths2.name}" class="categories-img">
+        <a href="#" class="category-title text-decoration-none">${paths2.name}</a>
+      </div>
+      <!-- Tambahkan card categories lainnya di sini -->
+    </div>
+  </div>
+  <!-- Tambahkan carousel-item untuk card categories lainnya jika diperlukan -->
+</div>
