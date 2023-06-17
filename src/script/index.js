@@ -7,6 +7,7 @@ import '../style/explore.css';
 import '../style/about.css';
 import '../style/materi.css';
 import '../style/landing.css';
+import '../style/main.css';
 
 const app = new Apps({
   navbar: document.querySelector('#navigation-bars'),

@@ -38,12 +38,21 @@
 }
 
 .list-group > .list-group-item {
-    margin-bottom: 0; /* Menghilangkan jarak di bawah list group */
-    border-radius: 0; /* Menghilangkan border radius */
-    background-color: #f8f9fa; /* Mengubah background menjadi abu-abu */
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #f8f9fa;
     border: none;
 }
   
 .code-campus-second{
     color: var(--second-color);
 }
+
+.list-group-item {
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #e0e0e0;
+}
+
