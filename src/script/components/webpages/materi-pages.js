@@ -16,18 +16,16 @@ export class ClassRoomPage extends HTMLElement {
       const additionalResources = materi.resources && materi.resources.additionalResources;
 
       materiList.innerHTML = `
-      <div class="jumbotron py-5 bg-opacity-60" style="height: 400px; background-color: rgba(0, 0, 0, 0.7); position: relative;">
-      <img src="${materi.pictUrl}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: grayscale(40%); z-index: -1;">
-      <div class="container text-center justify-content-center">
-        <h1 class="display-4 fs-1 fw-bolder text-white">${materi.title}</h1>
-        <p class="lead fs-6 text-white">Jangan pernah berhenti belajar. Di dunia coding, ada selalu hal baru yang bisa dipelajari dan dikuasai.<br> Teruslah eksplorasi dan berani mengambil tantangan baru.</p>
-        <a href="#/lesson/${materi.courseId}">
-          <button class="btn-custom btn-lg">Kembali Ke Koridor</button>
-        </a>
-      </div>
-    </div>
-    
-    
+        <div class="jumbotron py-5 bg-opacity-60" style="height: 400px; background-color: rgba(0, 0, 0, 0.7); position: relative;">
+              <img src="${materi.pictUrl}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: grayscale(40%); z-index: -1;">
+              <div class="container text-center justify-content-center">
+                <h1 class="display-4 fs-1 fw-bolder text-white">${materi.title}</h1>
+                <p class="lead fs-6 text-white">Jangan pernah berhenti belajar. Di dunia coding, ada selalu hal baru yang bisa dipelajari dan dikuasai.<br> Teruslah eksplorasi dan berani mengambil tantangan baru.</p>
+                <a href="#/lesson/${materi.courseId}">
+                  <button class="btn-custom btn-lg">Kembali Ke Koridor</button>
+                </a>
+              </div>
+        </div>
         <div class="item-materi container-fluid my-5">  
           <div class="intro mb-4">
             <h3 class="fs-5 fw-bold">Pengenalan</h3>
@@ -62,7 +60,7 @@ export class ClassRoomPage extends HTMLElement {
             ${additionalResources ? `
               <ul>
                 ${additionalResources.map((resource) => `
-                  <li class="fs-6 text-decoration-none"><a class="text-decoration-none text-body" href="${resource.link}" target="_blank">${resource.title}</a></li>
+                  <li class="fs-6 text-body-tertiary"><a class="fs-6 adational-stlye" href="${resource.link}" target="_blank">${resource.title}</a></li>
                 `).join('')}
               </ul>
             ` : ''}

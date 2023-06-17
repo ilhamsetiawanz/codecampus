@@ -26,18 +26,18 @@ const home = {
             
             </div>
             <div class="container populer-section" >
-                <h2 class="explore-container-title fw-bold">Explore Popular Course</h2>
+                <h2 class="explore-container-title fs-3 fw-bold">Explore Popular Course</h2>
                 <div id="populerSection" class="container-fluid">
                 </div> 
             </div>
             <div class="container-l bg-body-secondary">
-              <h2 class="text-center py-5 fw-bold">FAQ<h2>
+              <h2 class="text-center py-5 fs-3 fw-bold">FAQ<h2>
               <div class="accordion  pb-5" id="accordionExample">
                 
               </div>
             </div>
             <div class="container p-5">
-              <h2 class="text-center fw-bold">Testimonial User CodeCampus</h2>
+              <h2 class="text-center fs-3 fw-bold">Testimonial User CodeCampus</h2>
               <div class="container-xl pt-5">
               <div class="row">
                 <div class="col-md-6">

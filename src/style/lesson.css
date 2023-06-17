@@ -36,3 +36,14 @@
     height: auto;
     max-width: 100%;
 }
+
+.list-group > .list-group-item {
+    margin-bottom: 0; /* Menghilangkan jarak di bawah list group */
+    border-radius: 0; /* Menghilangkan border radius */
+    background-color: #f8f9fa; /* Mengubah background menjadi abu-abu */
+    border: none;
+}
+  
+.code-campus-second{
+    color: var(--second-color);
+}

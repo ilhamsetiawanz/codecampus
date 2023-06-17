@@ -1,33 +1,23 @@
-<div id="categoriesCarousel" class="carousel slide" data-bs-ride="carousel">
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div class="jumbotron mb-5 py-5 bg-opacity-60" style="height: 400px; background-color: rgba(0, 0, 0, 0.7); position: relative;">
+  <img src="${courses.pictUrl}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: grayscale(40%); z-index: -1;">
+  <div class="container text-center justify-content-center">
+    <h1 class="display-4 fs-1 fw-bolder text-white">${courses.tittle}</h1>
+    <p class="lead fs-6 text-white">Jangan pernah berhenti belajar. Di dunia coding, ada selalu hal baru yang bisa dipelajari dan dikuasai.<br> Teruslah eksplorasi dan berani mengambil tantangan baru.</p>
+  </div>
 </div>
-
-<div class="carousel-inner">
-  <div class="carousel-item active">
-    <div class="path-list categories container">
-      <div class="categories-box">
-        <img src="${paths.pictUrl}" alt="${paths.name}" class="categories-img">
-        <a href="#" class="category-title text-decoration-none">${paths.name}</a>
-      </div>
-      <!-- Tambahkan card categories lainnya di sini -->
-    </div>
+<div class="container-xxl">
+  <div class="card mb-4 pt-3 px-4">
+    <h2>Deskripsi</h2>
+    <p>${courses.desc}<p>
   </div>
-  <div class="carousel-item">
-    <div class="path-list categories container">
-      <div class="categories-box">
-        <img src="${paths2.pictUrl}" alt="${paths2.name}" class="categories-img">
-        <a href="#" class="category-title text-decoration-none">${paths2.name}</a>
-      </div>
-      <!-- Tambahkan card categories lainnya di sini -->
-    </div>
+  <div class="card mb-4 pt-3 px-4">
+    <h2>Materi</h2>
+    <div class="materi">
+    
+    <div>
   </div>
-  <!-- Tambahkan carousel-item untuk card categories lainnya jika diperlukan -->
+  <div class="card mb-4 pt-3 px-4">
+    <h2>Persiapan Kelas</h2>
+    <p>${courses.preps}</p>
+  </div>
 </div>

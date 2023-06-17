@@ -15,12 +15,12 @@ export class TopCourse extends HTMLElement {
       ratingCourse.slice(0, 6).forEach((rating) => {
         ratingList.innerHTML += `
         <div class="card explore-box hp-explore-box">
-        <img src="${rating.pictUrl}" alt="${rating.tittle}" class="card-img-top explore-img">
-        <div class="card-body">
-          <a href="#/lesson/${rating.id}" class="card-title explore-title text-decoration-none">${rating.tittle}</a>
-          <p class="card-text text-desc">${rating.desc}</p>
+          <img src="${rating.pictUrl}" alt="${rating.tittle}" class="card-img-top explore-img">
+          <div class="card-body">
+            <a href="#/lesson/${rating.id}" class="card-title explore-title text-decoration-none">${rating.tittle}</a>
+            <p class="card-text text-desc">${rating.desc}</p>
+          </div>
         </div>
-      </div>
         `;
       });
       this.appendChild(ratingList);

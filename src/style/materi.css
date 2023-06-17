@@ -28,6 +28,9 @@
     width: 100%;
 }
 
+.adational-stlye{
+    color: var(--second-color);
+}
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .item-materi{
         padding-left: 9%;
