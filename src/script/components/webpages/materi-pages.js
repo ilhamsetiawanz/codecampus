@@ -26,36 +26,36 @@ export class ClassRoomPage extends HTMLElement {
                 </a>
               </div>
         </div>
-        <div class="item-materi container-fluid py-5 bg-body-tertiary">  
-          <div class="intro mb-4">
-            <h3 class="fs-5 fw-bold">Pengenalan</h3>
+        <div class="item-materi container-fluid py-5 bg-body-tertiary ">  
+          <div class="intro pb-3">
+            <h3 class="fs-5 fw-bold code-campus-second">Pengenalan</h3>
             <p class="fs-6 text-justify">${materi.introduction}</p>
           </div>
-          <div class="overview mb-4">
-            <h3 class="fs-5 fw-bold">Penjelasan Kelas</h3>
+          <div class="overview pb-3">
+            <h3 class="fs-5 fw-bold code-campus-second">Penjelasan Kelas</h3>
             <p class="fs-6 text-justify">${materi.LessonOverview}</p>
           </div>
-          <div class="lesson mb-5">
-            <h3 class="fs-5 fw-bold">${materi.lessons.title}</h3>
+          <div class="lesson pb-3">
+            <h3 class="fs-5 fw-bold code-campus-second">${materi.lessons.title}</h3>
             <p class="fs-6 text-justify">${materi.lessons.content}</p>
             ${materi.lessons.subContent.map((sub) => `
-              <div class="sub-lesson mb-5">
-                <h4 class="fs-5 fw-bold">${sub.subTitle}</h4>
+              <div class="sub-lesson pb-3">
+                <h4 class="fs-5 fw-bold code-campus-second">${sub.subTitle}</h4>
                 <p class="fs-6 text-justify">${sub.subMateri}</p>
-                <img class="materi-img" src="${sub.subImg}">
+                <img class="materi-img pb-3" src="${sub.subImg}">
               </div>
             `).join('')}
           </div>
-          <div class="assignment pb-4">
-            <h3 class="fs-5 fw-bold">Tugas</h3>
+          <div class="assignment pb-3">
+            <h3 class="fs-5 fw-bold code-campus-second">Tugas</h3>
             <p class="fs-6 text-justify">${materi.Assignment}</p>
           </div>
-          <div class="knowledge-check">
-            <h3 class="fs-5 fw-bold">Kuis</h3>
+          <div class="knowledge-check pb-3">
+            <h3 class="fs-5 fw-bold code-campus-second">Kuis</h3>
             <p class="text-justify">${materi.knowledgeCheck}</p>
           </div>
-          <div class="additional-resources">
-            <h3 class="fs-5 fw-bold">Sumber Daya Tambahan</h3>
+          <div class="additional-resources pb-3">
+            <h3 class="fs-5 fw-bold code-campus-second">Sumber Daya Tambahan</h3>
             <p class="text-justify">Gunakan daftar link yang ada pada dibawah ini sebagai sumber pengentahuan lainnya dan juga bahan bacaan anda dalam memahami materi yang ada pada kelas  kali ini.</p>
             ${additionalResources ? `
               <ul>
@@ -65,8 +65,8 @@ export class ClassRoomPage extends HTMLElement {
               </ul>
             ` : ''}
           </div>
-          <div class="kesimpulan">
-            <h3 class="fs-5 fw-bold">Kesimpulan</h3>
+          <div class="kesimpulan pb-3">
+            <h3 class="fs-5 fw-bold code-campus-second">Kesimpulan</h3>
             <p class="fs-6 text-justify">${materi.conclution}</p>
           </div>
         </div>
