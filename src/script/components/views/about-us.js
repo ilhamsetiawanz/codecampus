@@ -59,7 +59,7 @@ const aboutUs = {
             <div class="cards">
                 <!-- profile image -->
                 <div class="text-center">
-                    <img class="img-fluid" src="#" alt=""/>
+                    <img class="img-fluid" src="./asset/raisul.jpg" alt=""/>
                 </div>
                 <!-- profile detail -->
                 <h4 class="fs-6 text-center">Raisul Amin R</h4>

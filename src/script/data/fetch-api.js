@@ -23,7 +23,7 @@ export const getRating = async () => {
   const { data: course, error } = await supabase
     .from('course')
     .select('*')
-    .gte('rating', 4); // Dengan Memanipulasi nilai pada rating kita dapat mengatur batasan dari rating yang ada
+    .gte('rating', 4);
 
   if (error) {
     console.log(error);
@@ -75,15 +75,15 @@ export const getMateri = async (id) => {
   return materi[0];
 };
 
-// Blog API
-export const getBlogs = async () => {
-  const { data: blogs, error } = await supabase
-    .from('blogs')
-    .select('*');
+// Project API
+export const getProject = async (id) => {
+  const { data: projects, error } = await supabase
+    .from('projects')
+    .select('*')
+    .eq('id', id);
 
-  return blogs;
+  return projects[0];
 };
-
 // FaQ API
 
 export const getFaq = async () => {

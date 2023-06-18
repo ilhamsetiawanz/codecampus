@@ -55,7 +55,7 @@ export class LessonPage extends HTMLElement {
       courses.projects.forEach((project) => {
         const projectsItem = document.createElement('div');
         projectsItem.innerHTML = `
-          <a class="fs-6 list-group-item py-3 hover:bg-grey-700" href="#/classroom/${project.id}"><i class="text-black-50 fa fa-tasks" aria-hidden="true"></i> ${project.title}</a>
+          <a class="fs-6 list-group-item py-3 hover:bg-grey-700" href="#/project/${project.id}"><i class="text-black-50 fa fa-tasks" aria-hidden="true"></i> ${project.title}</a>
         `;
         materiContainer.appendChild(projectsItem);
       });
